@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esraa Ramadan | Software Testing Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+--dark:#3E2723;
+--primary:#6D4C41;
+--accent:#A1887F;
+--beige:#F3ECE7;
+--white:#ffffff;
+}
+
+body{
+background:var(--beige);
+color:var(--dark);
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+background:var(--white);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+nav h2{
+color:var(--primary);
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:var(--dark);
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--primary);
+}
+
+/* SECTIONS */
+section{
+padding:120px 8%;
+}
+
+/* HERO / ABOUT / All Sections Flex Layout */
+.hero, .about-section{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:60vh;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1, .about-section h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:var(--primary);
+}
+
+.hero p, .about-section p{
+margin-bottom:30px;
+line-height:1.8;
+font-size:18px;
+}
+
+.hero-img img{
+max-width:300px;
+border-radius:15px;
+}
+
+/* Buttons */
+.btn{
+padding:12px 25px;
+background:var(--primary);
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--dark);
+}
+
+/* Courses Images Column */
+.courses-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.courses-imgs img {
+  max-width: 250px;
+  border-radius: 15px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+.hero, .about-section{
+flex-direction:column;
+text-align:center;
+}
+.hero-img{
+margin-top:20px;
+}
+.courses-imgs img{
+max-width:180px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>Esraa Ramadan</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#awards">Awards</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Esraa Ramadan</span></h1>
+    <p>Software Tester | Intelligent Systems Engineering Student<br>
+       Building Smart Systems with Strong Testing Foundations<br>
+       Future AI Engineer Focused on Software Quality
+    </p>
+    <a href="https://www.linkedin.com/in/esraa-as11" target="_blank" class="btn">Visit My LinkedIn</a>
+  </div>
+  <div class="hero-img">
+    <img src="images/hero-photo.jpg" alt="Esraa Ramadan">
+  </div>
+</section>
+<section id="about" class="about-section">
+  <div class="hero-text">
+    <h2>About Me</h2>
+    <p>
+      I am an Intelligent Systems Engineering student with a strong interest in Software Testing and Artificial Intelligence.
+      I have a solid foundation in Python, C++, HTML, CSS, and AI fundamentals. I have completed the Software Testing track through DEPI, 
+      focusing on software quality assurance, test case design, and defect reporting.
+      I am passionate about building reliable systems and continuously improving my technical skills through hands-on learning and real-world challenges.
+    </p>
+  </div>
+  <div class="hero-img">
+    <img src="images/about-photo.jpg" alt="Esraa Ramadan About">
+  </div>
+</section>
+<!-- EDUCATION -->
+<section id="education" class="about-section">
+  <div class="hero-text">
+    <h2>Education</h2>
+    <h3>Al-Azhar University</h3>
+    <p>Faculty of Engineering – Intelligent Systems</p>
+  </div>
+  <div class="hero-img">
+    <img src="images/university-logo.png" alt="Al-Azhar University">
+  </div>
+</section>
+
+<section id="experience" class="about-section">
+  <div class="hero-text">
+    <h2>Experience</h2>
+    
+    <h3>Software Testing Training – DEPI (2025)</h3>
+    <ul>
+      <li>Studied software testing fundamentals and quality assurance principles.</li>
+      <li>Designed test cases and executed manual testing scenarios.</li>
+      <li>Identified and documented software defects.</li>
+      <li>Practiced analytical thinking and problem-solving in testing environments.</li>
+    </ul>
+
+    <h3>AI & Python Projects</h3>
+    <ul>
+      <li>Completed AI fundamentals and machine learning introductory tasks.</li>
+      <li>Built basic Python programs and implemented simple ML concepts.</li>
+      <li>Applied neural network fundamentals through online coursework.</li>
+    </ul>
+
+  </div>
+  <div class="hero-img">
+    <img src="images/depi-logo.png" alt="DEPI Logo">
+  </div>
+</section>
+
+<!-- COURSES / CERTIFICATIONS -->
+<section id="courses" class="about-section">
+  <div class="hero-text">
+    <h2>Courses / Certifications</h2>
+    <h3>Applications of Artificial Intelligence – 2025</h3>
+    <p>The British University in Egypt – School of Continuing Education</p>
+    <ul>
+      <li>Overview of Artificial Intelligence concepts</li>
+      <li>Real-world AI applications</li>
+      <li>Introduction to Machine Learning & Data-driven solutions</li>
+    </ul>
+
+    <h3>DataCamp – Online Learning Platform – 2025</h3>
+    <ul>
+      <li>Introduction to Python</li>
+      <li>Introduction to Deep Learning with Python</li>
+      <li>Python Programming Basics</li>
+      <li>Neural Networks Fundamentals</li>
+    </ul>
+  </div>
+
+  <div class="hero-img courses-imgs">
+    <img src="images/ai-course.png" alt="AI Course">
+    <img src="images/datacamp-logo.png" alt="DataCamp Logo">
+    <img src="images/python-course.png" alt="Python Course">
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="about-section">
+  <div class="hero-text">
+    <h2>Skills</h2>
+    <p> Manual Testing | Test Case Design | Bug Reporting | SDLC & STLC | Functional Testing | Problem Solving | HTML & CSS Web Development | Python Programming | AI Fundamentals | Machine Learning Basics | Neural Networks Fundamentals | Website Design  </p>
+  </div>
+  <div class="hero-img">
+    <img src="images/skills-icon.png" alt="">
+  </div>
+</section>
+
+<!-- AWARDS / VOLUNTEER -->
+<section id="awards" class="about-section">
+  <div class="hero-text">
+    <h2>Awards / Volunteer Work</h2>
+    <h3>Volunteer (PR Team) – NASA Space Apps Challenge – 2025</h3>
+    <p>Community Engagement & Event Support</p>
+  </div>
+  <div class="hero-img">
+    <img src="images/nasa.png" alt="NASA Logo">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="about-section">
+  <div class="hero-text">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 01554100743</p>
+    <p><strong>Email:</strong> esraaramadan5121@gmail.com</p>
+    <p><strong>Location:</strong> Cairo – Abbasia</p>
+
+    <a href="https://www.linkedin.com/in/esraa-as11" target="_blank" class="btn">Connect on LinkedIn</a>
+  </div>
+  <div class="hero-img">
+    <img src="images/contact-icon.png" alt="">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Esraa Ramadan | All Rights Reserved
+</footer>
+
+</body>
+</html>
